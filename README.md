@@ -40,7 +40,20 @@ We can also install [JSON Server|https://github.com/typicode/json-server] in Loc
 `npm install json-server` to install Json Server and create a file db.json and pass it to Json Sever Cli with this command
 `npx json-server db.json`, run json-server --help for a list of options.
 
+
+## handling data flow and loading and displaying fetched data
 In the commit with message: Loading and displaying data to the board we can see all the implemetations done so far.
+We have made pages and components to display Project Board with Lanes and Tasks into the lanes.
+We used Json server to fetch data for the application and now we explore custom hook to share data fetch logic with other components.
+
+## Creating and using custom hook making the project board dynamic.
+We'll create a custom Hook to fetch data from json server and we'll use it in the Board component to disply application data.
+
+> Relative commit: Create custom hook for data fetching.
+
+> [!NOTE]
+> Hooks: A higher-order component is a function that takes a component and returns a new component.
+> Hooks are a Higher Order Component (HOC) that are a popular pattern to reuse logic throught a HOC creation and that focus on reusability of components. All Hook nae start with 'use[hook-name]'.
 
 
 
