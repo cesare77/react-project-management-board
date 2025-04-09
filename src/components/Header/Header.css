@@ -7,9 +7,9 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
-}
-
-.Header-wrapper h1 {
-    height: 64px;
-    pointer-events: none;
+    
+    h1 {
+        height: 64px;
+        pointer-events: none;
+    }
 }

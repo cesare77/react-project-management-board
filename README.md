@@ -55,7 +55,9 @@ We'll create a custom Hook to fetch data from json server and we'll use it in th
 > Hooks: A higher-order component is a function that takes a component and returns a new component.
 > Hooks are a Higher Order Component (HOC) that are a popular pattern to reuse logic throught a HOC creation and that focus on reusability of components. All Hook nae start with 'use[hook-name]'.
 
+Now we'll create a Backlog components for new tasks that aren't in the other lanes and re-use the custom hook to highlight the custom hook reusability.
 
+> Relative commit: Backlog component and other small changes.
 
 > [!NOTE]
 > Note ...
