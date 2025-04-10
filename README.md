@@ -59,5 +59,15 @@ Now we'll create a Backlog components for new tasks that aren't in the other lan
 
 > Relative commit: Backlog component and other small changes.
 
+We'll now adds the ability to drag and drop tasks from one lane to another using HTML5 drag and drop Api which is available in every modern browser.
+We'l use the Drag Events in more depth we'll use the: onDragStart, onDragOver and onDrop.
+
+> Relative commit: Drag and Drop feature implemented
+
 > [!NOTE]
 > Note ...
+
+> [!TODO]
+> Set up **react-router** for this project to render the Backlog component on a different page.
+> Impement drag and drop also for Backlog component or make this logic reusable with another custom hook.
+> Implement creation, update and delete (CRUD) of task and relative update on db.json
