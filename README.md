@@ -46,7 +46,7 @@ In the commit with message: Loading and displaying data to the board we can see 
 We have made pages and components to display Project Board with Lanes and Tasks into the lanes.
 We used Json server to fetch data for the application and now we explore custom hook to share data fetch logic with other components.
 
-## Creating and using custom hook making the project board dynamic.
+## Creating and using custom hook to fetch data.
 We'll create a custom Hook to fetch data from json server and we'll use it in the Board component to disply application data.
 
 > Relative commit: Create custom hook for data fetching.
@@ -59,15 +59,36 @@ Now we'll create a Backlog components for new tasks that aren't in the other lan
 
 > Relative commit: Backlog component and other small changes.
 
+##  Making the project board dynamic with drag 'n' drop feature
 We'll now adds the ability to drag and drop tasks from one lane to another using HTML5 drag and drop Api which is available in every modern browser.
 We'l use the Drag Events in more depth we'll use the: onDragStart, onDragOver and onDrop.
 
 > Relative commit: Drag and Drop feature implemented
 
-> [!NOTE]
-> Note ...
+## Styling with styled-components package
+Styled-components package allow us to styling components without import css file and to write css inside javascript (CSS-in-JS).
+`npm install styled-components` to install package. With this package we'll be able to prevent duplication or overlapping of styles due to _classNames_ and add dynamic styling to components with ease.
 
-> [!TODO]
+Official website and documentation https://styled-components.com/.
+
+We'll style all applicaiton components with styled-components directly inside relative jsx file.
+We can also create a **global style** for the applicaiton, which is currently done in _src/index.css_.
+The file is imported in _main.jsx_ nd therefore loaded into every page of the application.
+Well implement global style in _App.jsx_ 'cause this component wraps al our components.
+
+> Relative commit: styled components
+
+> [!NOTE]
+> The <> notation is shorthand for <React.Fragment>; you can use both notations in React. For the <React.Fragment> notation, you can also import Fragment from React to write <Fragment>.
+
+
+> [!NOTE]
 > Set up **react-router** for this project to render the Backlog component on a different page.
-> Impement drag and drop also for Backlog component or make this logic reusable with another custom hook.
+> Implement drag and drop also for Backlog component or make this logic reusable with another custom hook.
 > Implement creation, update and delete (CRUD) of task and relative update on db.json
+
+## Further reading
+- The HTML Drag and Drop API: https://developer.mozilla.org/
+en-US/docs/Web/API/HTML_Drag_and_Drop_API
+- DataTransfer: https://developer.mozilla.org/en-US/docs/Web/API/DataTransfer
+- React DnD: https://github.com/react-dnd/react-dnd
